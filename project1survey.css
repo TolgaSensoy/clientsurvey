@@ -1,0 +1,60 @@
+body {
+    width:100%;
+    height:100vh;
+    margin:0;
+    background-color:#282828;
+    color:white;
+    font-size:16px;
+    font-family:"Candara";
+  }
+  input, label, textarea, select {
+  display:inline;
+  width:100%;
+  margin:10px 0 0 0;
+  }
+  fieldset {
+    border:0;
+    padding: 2rem 0;
+  
+  }
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  form {
+    padding-bottom:2em;
+    margin:0 auto;
+    text-align: center;
+    max-width:500px;
+    min-width:300px;
+    width:60vw;
+  }
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  fieldset {
+    text-align:center;
+  }
+  input, textarea, select {
+    background-color: black;
+    border: 1px solid black;
+    color: #ffffff;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: auto;
+    height: 3em;
+    font-size: 1.1rem;
+    background-color: black;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  .inline {
+    width:unset;
+    margin:0.5em;
+    display:inline;
+    vertical-align:middle;
+  }

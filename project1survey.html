@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link href="project1survey.css">
+    <title>Customer satisfaction survey</title>
+    <body>
+        <h1 id="title">Send us your feedback!</h1>
+        <p id="description">Customer satisfaction survey (*=<em>mandatory</em>)</p>
+        <form id="survey-form">
+            <fieldset>
+            <label for="name" id="name-label">
+            Name*:<input id="name" type="text" placeholder="Enter your name here..." required/>
+            </label>
+            <label for="number" id="number-label">Age:
+                <input type="number" id="number" min="13" max="120" placeholder="Enter your age here..." value="">
+            </label>
+            <label for="email" id="email-label">E-mail address*:
+                <input type="email" id="email" placeholder="Enter your email here..." value="" required>
+            </label>
+            </fieldset>
+            <label for="dropdown">How often do you use our website?
+            <select id="dropdown">
+                <option value="">Select one</option>
+                <option value="1">Rarely</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Everyday</option>
+            </select>
+            </label>
+            <fieldset>
+         How satisfied are you from our website?
+            <label for="satisfaction">
+                <input type="radio" id="satisfaction" name="satisfaction" value="very bad" class="inline">Very unsatisfied
+                <input type="radio" id="satisfaction" value="bad" name="satisfaction" class="inline">Unsatistifed
+                <input type="radio" id="satisfaction" value="ok" name="satisfaction" class="inline">OK
+                <input type="radio" id="satisfaction" value="good" name="satisfaction" class="inline">Satisfied
+                <input type="radio" id="satisfaction" value="very good" name="satisfaction" class="inline">Very satisfied
+            </label>  
+            </fieldset>
+             <label for="reason"> Please let us know how we can improve our website:
+            <textarea id="reason" placeholder="Enter your comments here..." rows="3" cols="30"></textarea>
+            </label>  
+            <fieldset>
+        <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" value="terms-and-conditions"required class="inline"/>I accept the terms and conditions*</label>
+        <label for="newsletters"><input type="checkbox" id="newsletters" value="newsletters" class="inline">I would like to subscribe to the newsletters</label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+        </form>    
+    </body>
+</html>
